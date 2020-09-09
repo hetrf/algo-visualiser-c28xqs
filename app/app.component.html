@@ -1,0 +1,48 @@
+<div class="main-container">
+	<header class="header">
+		<span class="nav-text">Algorithm Visualizer</span>
+	</header>
+	<div class="content-container">
+		<div class="content-area">
+			<!-- <router-outlet></router-outlet> -->
+		</div>
+		<clr-vertical-nav [clrVerticalNavCollapsible]="true">
+			<clr-vertical-nav-group routerLinkActive="active">
+				<clr-icon shape="user" clrVerticalNavIcon></clr-icon>
+				Graphs
+				<clr-vertical-nav-group-children>
+					<a clrVerticalNavLink routerLink="./normal/pidgey" routerLinkActive="active">
+						A* Path Finding
+					</a>
+					<a clrVerticalNavLink routerLink="./normal/snorlax" routerLinkActive="active">
+						Dijkstra's
+					</a>
+					<a clrVerticalNavLink routerLink="./normal/snorlax" routerLinkActive="active">
+						Depth First Search
+					</a>
+					<a clrVerticalNavLink routerLink="./normal/snorlax" routerLinkActive="active">
+						Breadth First Search
+					</a>
+				</clr-vertical-nav-group-children>
+			</clr-vertical-nav-group>
+			<clr-vertical-nav-group routerLinkActive="active">
+				<clr-icon shape="flame" clrVerticalNavIcon></clr-icon>
+				Standard Algorithms
+				<clr-vertical-nav-group-children>
+					<a clrVerticalNavLink routerLink="./fire/charmander" routerLinkActive="active">
+						Bubble Sort
+					</a>
+					<a clrVerticalNavLink routerLink="quicksort" routerLinkActive="active">
+						Quick Sort
+					</a>
+					<a clrVerticalNavLink routerLink="./fire/charizard" routerLinkActive="active">
+						Heap Sort
+					</a>
+					<a clrVerticalNavLink routerLink="./fire/charizard" routerLinkActive="active">
+						Merge Sort
+					</a>
+				</clr-vertical-nav-group-children>
+			</clr-vertical-nav-group>
+		</clr-vertical-nav>
+	</div>
+</div>
